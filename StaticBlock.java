@@ -1,0 +1,25 @@
+package wiley_core_java;
+
+public class StaticBlock {
+	static int a;
+	
+	static {
+		System.out.println("static block");
+	}
+	{
+		System.out.println("instance block");
+	}
+	public StaticBlock() {
+		System.out.println("inside constructor");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		StaticBlock sb= new StaticBlock();
+		new StaticBlock();
+		new StaticBlock();
+		new StaticBlock();
+
+	}
+
+}
