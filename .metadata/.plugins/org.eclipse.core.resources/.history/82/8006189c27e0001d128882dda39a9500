@@ -1,0 +1,25 @@
+package wiley_core_java;
+
+class Vehicle{
+	
+	public void steering() {
+		System.out.println("steering");
+	}
+
+}
+
+class Car extends Vehicle{
+	public void airbag() {
+		System.out.println("airbag");
+	}
+}
+
+class Truck extends Vehicle{
+	public void Pump() {
+		System.out.println("Pump");
+	}
+}
+
+public class HierarchicalInheritance {
+
+}

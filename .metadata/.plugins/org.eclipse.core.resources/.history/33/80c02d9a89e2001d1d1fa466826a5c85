@@ -1,0 +1,15 @@
+package Exceptions;
+
+public class CustomException {
+
+	public static void getAge(int age) {
+		if(age>18) {
+			throw new AgeNotValid("age not valid");
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

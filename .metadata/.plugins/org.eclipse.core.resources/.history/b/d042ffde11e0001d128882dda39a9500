@@ -1,0 +1,15 @@
+package wiley_core_java;
+
+public class InstanceOrder {
+	{
+		System.out.println("Instance Block");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InstanceOrder io= new InstanceOrder();
+		
+
+	}
+
+}

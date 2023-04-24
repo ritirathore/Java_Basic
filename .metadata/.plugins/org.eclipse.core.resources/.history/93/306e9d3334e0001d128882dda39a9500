@@ -1,0 +1,25 @@
+package wiley_core_java;
+
+class Vehicle{
+	public void speed() {
+		System.out.println(" speed");
+	}
+}
+
+class Car extends Vehicle{
+	public void speed() {
+		System.out.println("car speed");
+	}
+}
+
+public class RuntimePoly {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vehicle v= new Car();
+		v.speed();
+		
+
+	}
+
+}

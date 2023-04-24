@@ -1,0 +1,22 @@
+package Exceptions;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("First line");
+		
+		int arr[]= {1,2,3,4};
+		try {
+			System.out.println(arr[1]);
+			System.out.println(arr[4]);
+		}catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
+			System.out.println("array out of bounds exception");
+		}
+		
+		System.out.println("second line");
+
+	}
+
+}

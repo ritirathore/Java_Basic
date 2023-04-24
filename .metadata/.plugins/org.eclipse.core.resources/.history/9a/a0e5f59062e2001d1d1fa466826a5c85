@@ -1,0 +1,18 @@
+package wiley_core_java;
+
+class Testr{
+	void print() {
+		System.out.println("default message");
+	}
+}
+
+public class AccessModifierEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Testr t= new Testr();
+		t.print();
+
+	}
+
+}

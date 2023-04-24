@@ -1,0 +1,21 @@
+package wiley_core_java;
+
+public class VarScope {
+	
+	int ins=20;
+	static String name= "riti";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int loc=10;
+		VarScope vs= new VarScope();
+		
+		System.out.println("Local var:"+ loc);
+		
+		System.out.println("instance var:"+vs.ins);
+		
+		System.out.println("static var:"+ name);
+
+	}
+
+}

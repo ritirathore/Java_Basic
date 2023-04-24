@@ -1,0 +1,6 @@
+package new_package;
+
+class ProtectedEx {
+	protected String str="Riti Rathore";
+
+}
