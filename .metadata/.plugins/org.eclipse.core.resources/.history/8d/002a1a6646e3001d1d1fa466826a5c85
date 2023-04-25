@@ -1,0 +1,27 @@
+package IOStream;
+
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+
+public class BOStream {
+
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		BufferedOutputStream bof= new BufferedOutputStream(System.out);
+		
+		String str= "I am a programmer";
+		byte[] b= str.getBytes();
+		
+//		System.out.println(b);
+		
+		try {
+			bof.write(b);
+			bof.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

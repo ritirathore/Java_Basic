@@ -1,0 +1,38 @@
+package IOStream;
+
+import java.io.DataOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import wiley_core_java.Records;
+
+public class StudentRecord {
+	
+	DataOutputStream dataOutput;
+	public StudentRecord(String outputFile) throws FileNotFoundException {
+		dataOutput= new DataOutputStream(new FileOutputStream(outputFile));
+	}
+	
+	public void write(Records record) throws IOException {
+		dataOutput.writeUTF(record.getName());
+		dataOutput.writeBoolean(record.isGender());
+		dataOutput.writeInt(record.getAge());
+		dataOutput.writeFloat(record.getGrade());
+		
+	}
+	
+	public void save() throws IOException {
+		dataOutput.close();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		if(args.length<1) {
+			System.out.println("Please provide output file");
+			System.exit(0);
+		}
+
+	}
+
+}
