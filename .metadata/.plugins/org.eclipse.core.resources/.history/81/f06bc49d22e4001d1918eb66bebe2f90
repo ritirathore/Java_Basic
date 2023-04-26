@@ -1,0 +1,28 @@
+package Patterns;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class PatternMatching {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input="Riti Rathore is my name";
+		Pattern pattern= Pattern.compile("is");
+		Matcher matcher = pattern.matcher(input);
+		
+//		System.out.println(matcher);
+		
+		System.out.println((matcher.find()));
+		
+		if(matcher.find()) {
+			int start= matcher.start();
+			int end= matcher.end();
+			
+			System.out.println("Start:"+start);
+			System.out.println("End:"+end);
+		}
+
+	}
+
+}

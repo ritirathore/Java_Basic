@@ -1,0 +1,33 @@
+package DateTime;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// current date
+		LocalDate myDate = LocalDate.now();
+		System.out.println(myDate);
+
+		// current time
+		LocalTime myTime = LocalTime.now();
+		System.out.println(myTime);
+
+		// current datetime
+		LocalDateTime myDate1 = LocalDateTime.now();
+		System.out.println("before format:" + myDate1);
+		
+		//datetime formatter
+		DateTimeFormatter mdf=DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+		String modDateTime= myDate1.format(mdf);
+		System.out.println("After format:"+modDateTime);
+		
+
+	}
+
+}

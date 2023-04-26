@@ -1,0 +1,23 @@
+package RandomConcepts;
+
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
+
+public class CurrencyClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Currency usd= Currency.getInstance("USD");
+		NumberFormat f= NumberFormat.getCurrencyInstance(Locale.US);
+		String fv= f.format(108.5);
+		System.out.println(fv);
+		
+		Currency r= Currency.getInstance("INR");
+		NumberFormat f1= NumberFormat.getCurrencyInstance(new Locale("en","in"));
+		String fv1= f1.format(108.5);
+		System.out.println(fv1);
+
+	}
+
+}

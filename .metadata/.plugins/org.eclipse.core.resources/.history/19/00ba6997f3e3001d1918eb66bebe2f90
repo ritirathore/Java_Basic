@@ -1,0 +1,18 @@
+package IOStream;
+
+import java.io.FileOutputStream;
+
+public class FileStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileOutputStream fout= new FileOutputStream();
+		String str= "Wiley Edge";
+		byte[] b= str.getBytes();
+		fout.write(b);
+		fout.flush();
+		fout.close();
+
+	}
+
+}
