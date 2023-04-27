@@ -1,0 +1,44 @@
+package ProductsAssignment;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+public class ReadProducts {
+	
+	BufferedReader reader;
+	
+	public ReadProducts(String inputFile) throws FileNotFoundException {
+		FileReader fileReader= new FileReader(inputFile);
+		reader= new BufferedReader(fileReader);
+	}
+	
+	public List<Products> readAll() {
+		List<Products> l= new ArrayList<>();
+		
+		String str="";
+		try {
+			while((str=reader.readLine())!=null) {
+				StringTokenizer tokens= new StringTokenizer(str,",");
+				String name= tokens.nextToken();
+				int id= Integer.parseInt(tokens.nextToken());
+				
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}
