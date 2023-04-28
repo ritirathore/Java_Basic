@@ -1,0 +1,47 @@
+package generics;
+
+import java.util.ArrayList;
+
+public class GenericClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IntegerPrinter printer = new IntegerPrinter(27);
+		printer.print();
+		
+		DoublePrinter printer1 = new DoublePrinter(27.99);
+		printer1.print();
+		
+		StringPrinter printer2 = new StringPrinter("Hi");
+		printer2.print();
+		
+//		Printer<String> printer3= new Printer("hello");
+//		printer3.print();
+//		
+//		Printer<Integer> printer4= new Printer(1234);
+//		printer4.print();
+//		
+//		Printer<Double> printer5= new Printer(1234.23d);
+//		printer5.print();
+//		
+		Printer<Cat> printer6= new Printer(new Cat());
+		printer6.print();
+		
+		Printer<Dog> printer7= new Printer(new Dog());
+		printer7.print();
+		
+		ArrayList<Object> cats= new ArrayList<>();
+		cats.add(new Cat());
+		cats.add(new Cat());
+		cats.add(new Dog());
+		
+		
+		
+
+	}
+	
+	public static<T> void shout(T shoutOut) {
+		System.out.println(shoutOut+ "...!!!!");
+	}
+
+}

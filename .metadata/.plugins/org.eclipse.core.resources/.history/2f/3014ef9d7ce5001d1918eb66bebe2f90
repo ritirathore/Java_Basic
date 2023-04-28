@@ -1,0 +1,21 @@
+package JavaThreads;
+
+class Demo implements Runnable{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Thread Name:"+ Thread.currentThread().getName());
+	}
+}
+
+public class ThreadGroup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ThreadGroupConcept t1= new ThreadGroupConcept();
+		ThreadGroupConcept t2= new ThreadGroupConcept();
+		
+
+	}
+
+}

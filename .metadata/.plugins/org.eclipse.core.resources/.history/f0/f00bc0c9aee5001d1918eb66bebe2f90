@@ -1,0 +1,15 @@
+package generics;
+
+public class StringPrinter {
+	Integer valToPrint;
+
+	public StringPrinter(Integer valToPrint) {
+		super();
+		this.valToPrint = valToPrint;
+	}
+
+    public void print() {
+    	System.out.println(valToPrint);
+    }
+
+}
