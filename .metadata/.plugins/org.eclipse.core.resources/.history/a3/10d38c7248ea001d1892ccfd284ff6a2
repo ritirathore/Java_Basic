@@ -1,0 +1,33 @@
+package collections;
+
+public class EqualClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int a=4;
+//		int b=2;
+//		if(a==b) {
+//			System.out.println("equal numbers");
+//		}else {
+//			System.out.println("unequal numbers");
+//		}
+		
+//		String a=new String("riti");
+//		String b=new String("riti");
+//		if(a==b) {
+//			System.out.println("equal numbers");
+//		}else {
+//			System.out.println("unequal numbers");
+//		}
+		
+		Dog myDog= new Dog();
+		Dog yourDog= new Dog();
+		if(myDog.equals(yourDog)) {
+			System.out.println("equal numbers");
+		}else {
+			System.out.println("unequal numbers");
+		}
+
+	}
+
+}

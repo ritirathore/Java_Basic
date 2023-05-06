@@ -1,0 +1,13 @@
+package lambda;
+
+public class LambdaClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Product prod= new Product();
+		prod.print();
+
+	}
+
+}

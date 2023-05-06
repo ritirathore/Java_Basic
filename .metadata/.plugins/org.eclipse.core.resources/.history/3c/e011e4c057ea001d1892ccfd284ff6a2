@@ -1,0 +1,43 @@
+package collections;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
+public class CustomArrayList extends ArrayList {
+	
+	public boolean add(Object o) {
+		if(this.contains(o)) {
+			return true;
+		}else {
+			return super.add(o);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		CustomArrayList list = new CustomArrayList();
+		
+		list.add(1);
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(3);
+		System.out.println(list);
+		
+		Set<Student> set= new HashSet<>();
+		Student s1= new Student(101, "Riti");
+		Student s2= new Student(102, "Rathore");
+		Student s3= new Student(103, "didi");
+		
+		set.add(s1);
+		set.add(s2);
+		set.add(s3);
+		
+		System.out.println(set);
+		
+
+	}
+
+}

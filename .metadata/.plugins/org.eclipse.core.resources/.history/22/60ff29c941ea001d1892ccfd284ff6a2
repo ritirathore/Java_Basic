@@ -1,0 +1,19 @@
+package collections;
+
+import java.util.TreeMap;
+
+public class TreeMapClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeMap<Integer,String> tmap= new TreeMap<>();
+		tmap.put(1000, "riti");
+		tmap.put(1001, "rathore");
+		tmap.put(1002, "kochi");
+		tmap.put(1003, "didi");
+		
+		System.out.println(tmap);
+
+	}
+
+}
