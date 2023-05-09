@@ -1,0 +1,30 @@
+package data_structures;
+
+class Node{
+	int key;
+	Node left, right;
+	public Node(int item) {
+		key= item;
+		left= right= null;
+		
+	}
+}
+
+class BST{
+	boolean search(Node root, int x) {
+		if(root==null)return false;
+		
+		if(root.key==x) return true;
+		else if(root.key>x) return search(root.right,x);
+		else return search(root.left,x);
+	}
+}
+
+public class BinarySearchTree {
+	Node root;
+	
+	public BinarySearchTree() {
+		root=null;
+	}
+
+}

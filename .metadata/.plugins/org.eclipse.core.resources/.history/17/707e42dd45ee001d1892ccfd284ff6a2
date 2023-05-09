@@ -1,0 +1,35 @@
+package data_structures;
+
+class NodeThree{
+	int data;
+	NodeThree left, right;
+	
+	NodeThree(int d){
+		data= d;
+		left= right= null;
+				
+	}
+}
+
+class Height{
+	int height=0;
+}
+
+public class BalancedTree {
+	Node root;
+	boolean checkHeightBalance(Node root, Height height) {
+		if(root==null) {
+			height.height=0;
+			return true;
+		}
+		Height leftHeight= new Height(), rightHeight= new Height();
+		boolean l= checkHeightBalance(root.left, leftHeight);
+		boolean r= checkHeightBalance(root.right, rightHeight);
+		
+		int lh= leftHeight.height;
+		int rh= rightHeight.height;
+		
+		return false;
+	}
+
+}
