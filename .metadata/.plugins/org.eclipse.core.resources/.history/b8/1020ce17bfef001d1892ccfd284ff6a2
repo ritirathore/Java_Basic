@@ -1,0 +1,13 @@
+package data_structures;
+
+import java.util.Hashtable;
+
+public class HashTableClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hashtable<Integer,Integer> ht= new Hashtable<Integer, Integer>();
+
+	}
+
+}

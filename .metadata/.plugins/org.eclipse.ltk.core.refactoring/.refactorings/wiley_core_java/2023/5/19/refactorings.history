@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;data_structures.HashTable.java&apos; to &apos;HashTableClass.java&apos;&#x0D;&#x0A;- Original project: &apos;wiley_core_java&apos;&#x0D;&#x0A;- Original element: &apos;data_structures.HashTable.java&apos;&#x0D;&#x0A;- Renamed element: &apos;data_structures.HashTableClass.java&apos;" description="Rename compilation unit &apos;HashTable.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;data_structures{HashTable.java" name="HashTableClass.java" references="false" stamp="1683783851469" version="1.0"/>
+</session>
