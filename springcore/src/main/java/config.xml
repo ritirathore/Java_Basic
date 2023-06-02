@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xmlns:context="http://www.springframework.org/schema/context"
+ 	xmlns:p="http://www.springframework.org/schema/p"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/spring-context.xsd">
+ 
+ 
+ <bean class="com.wiley.springcore.Student" name="wileystudent1"> 
+ <property name="studentId" value="2000">
+ 
+ </property>
+ 
+ <property name="studentName" value="Riti">
+
+ </property>
+ 
+ <property name="studentAddress" value="Kasganj">
+ 
+ </property>
+ 
+ <!--<property name="studentId">
+ <value> 2000</value>
+ </property>
+ 
+ <property name="studentName">
+ <value> Riti</value>
+ </property>
+ 
+ <property name="studentAddress">
+ <value> Kasganj</value>
+ </property>  -->
+ 
+ </bean>
+ 
+ <bean class="com.wiley.springcore.Student" name="wileystudent2"> 
+ <property name="studentId" value="2001">
+ 
+ </property>
+ 
+ <property name="studentName" value="Rathore">
+
+ </property>
+ 
+ <property name="studentAddress" value="Etah">
+ 
+ </property>
+ 
+ <property name="courseIds">
+ <list>
+ <value>101</value>
+ <value>102</value>
+ <value>103</value>
+ <value>104</value>
+ </list>
+ 
+ </property>
+ 
+ <property name="subjects">
+ <set>
+ <value>DAA</value>
+ <value>DBMS</value>
+ <value>CN</value>
+ <value>TOFL</value>
+ </set>
+ 
+ </property>
+ 
+ <property name="map">
+ <map>
+ <entry key="DAA" value="101"></entry>
+ <entry key="DBMS" value="102"></entry>
+ <entry key="CN" value="103"></entry>
+ <entry key="TOFL" value="104"></entry>
+ </map>
+ 
+ </property>
+ 
+ <property name="props">
+ <props>
+ <prop key="name">Riti</prop>
+ <prop key="work at">AKGEC</prop>
+ </props>
+ </property>
+ 
+ <property name="ar" >
+<ref bean="ar1"></ref>
+</property>
+ 
+ </bean>
+ 
+ <bean
+ class="com.wiley.springcore.Student"
+ name="wileystudent3"
+ p:studentId="2003"
+ p:studentName="Ra"
+ p:studentAddress="kjjk"
+ 
+ >
+ </bean>
+ 
+ <bean
+ class="com.wiley.springcore.Address"
+ name="ar1"
+ p:houseNo="200"
+ p:societyName="Ra"
+ 
+ 
+ >
+ </bean>
+ 	
+ </beans>
